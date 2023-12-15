@@ -1,0 +1,17 @@
+version: "3.8"
+name: monitoror
+services:
+  monitoror:
+    container_name: monitoror
+    image: monitoror/monitoror
+    env_file: .env
+    environment:
+      - MO_PORT=${APP_PORT}
+      - MO_CONFIG=/bin/config.json
+    restart: always
+    ports:
+      - ${APP_PORT}:${APP_PORT}
+    volumes:
+      - ./config.json:/bin/config.json
+    extra_hosts:
+      - host.docker.internal:host-gateway
