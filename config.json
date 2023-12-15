@@ -1,21 +1,69 @@
 {
   "version": "2.0",
-  "columns": 2,
+  "columns": 10,
   "tiles": [
     {
-      "type": "PORT",
-      "label": "Welcome config example",
+      "type": "HTTP-STATUS",
+      "label": "Nginx Proxy Manager",
+      "columnSpan": 2,
+      "rowSpan": 1,
       "params": {
-        "hostname": "127.0.0.1",
-        "port": 8080
+        "url": "https://proxy.lautarobarba.com.ar"
       }
     },
     {
-      "type": "HTTP-RAW",
-      "label": "Monitoror stars",
+      "type": "PORT",
+      "label": "SSH Gate",
+      "columnSpan": 2,
+      "rowSpan": 1,
       "params": {
-        "url": "https://github.com/monitoror/monitoror",
-        "regex": "(\\d+) users starred"
+        "hostname": "lautarobarba.com.ar",
+        "port": 5000
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "label": "Xoa",
+      "columnSpan": 2,
+      "rowSpan": 1,
+      "params": {
+        "url": "https://xoa.lautarobarba.com.ar"
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "label": "Keycloak",
+      "columnSpan": 2,
+      "rowSpan": 1,
+      "params": {
+        "url": "https://keycloak.lautarobarba.com.ar"
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "label": "Gitlab",
+      "columnSpan": 2,
+      "rowSpan": 1,
+      "params": {
+        "url": "https://gitlab.lautarobarba.com.ar"
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "label": "lautarobarba.com.ar",
+      "columnSpan": 6,
+      "rowSpan": 1,
+      "params": {
+        "url": "https://lautarobarba.com.ar"
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "label": "error.lautarobarba.com.ar",
+      "columnSpan": 6,
+      "rowSpan": 1,
+      "params": {
+        "url": "https://error.lautarobarba.com.ar"
       }
     }
   ]
