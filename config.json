@@ -1,16 +1,7 @@
 {
   "version": "2.0",
-  "columns": 10,
+  "columns": 12,
   "tiles": [
-    {
-      "type": "HTTP-STATUS",
-      "label": "Nginx Proxy Manager",
-      "columnSpan": 2,
-      "rowSpan": 1,
-      "params": {
-        "url": "https://proxy.lautarobarba.com.ar"
-      }
-    },
     {
       "type": "PORT",
       "label": "SSH Gate",
@@ -19,6 +10,15 @@
       "params": {
         "hostname": "lautarobarba.com.ar",
         "port": 5000
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "label": "Nginx Proxy Manager",
+      "columnSpan": 2,
+      "rowSpan": 1,
+      "params": {
+        "url": "https://proxy.lautarobarba.com.ar"
       }
     },
     {
@@ -45,7 +45,16 @@
       "columnSpan": 2,
       "rowSpan": 1,
       "params": {
-        "url": "https://gitlab.lautarobarba.com.ar"
+        "url": "https://gitlab.desarrollosur.com.ar"
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "label": "Container Registry",
+      "columnSpan": 2,
+      "rowSpan": 1,
+      "params": {
+        "url": "https://registry.desarrollosur.com.ar"
       }
     },
     {
@@ -64,6 +73,24 @@
       "rowSpan": 1,
       "params": {
         "url": "https://error.lautarobarba.com.ar"
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "label": "desarrollosur.com.ar",
+      "columnSpan": 6,
+      "rowSpan": 1,
+      "params": {
+        "url": "https://lautarobarba.com.ar"
+      }
+    },
+    {
+      "type": "HTTP-STATUS",
+      "label": "error.desarrollosur.com.ar",
+      "columnSpan": 6,
+      "rowSpan": 1,
+      "params": {
+        "url": "https://lautarobarba.com.ar"
       }
     }
   ]
